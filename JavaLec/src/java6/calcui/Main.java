@@ -43,11 +43,18 @@ public class Main {
 		bMul = new Button("*");
 		bDiv = new Button("/");
 		bRes = new Button("=");
+		
+		bPlus.setSize(50, 50);
+		bPlus.setLocation(10, 10);
+		
+		bMinus.setSize(50, 50);
+		bMinus.setLocation(70, 10);
 	}
 
 	public void startFrame() {
 		frame.add(tf, BorderLayout.NORTH);
-		panel.setLayout(new GridLayout(4, 4));
+//		panel.setLayout(new GridLayout(4, 4));
+		panel.setLayout(null);
 
 		for (int i = 0; i < bNum.length; i++) {
 			panel.add(bNum[i]);
